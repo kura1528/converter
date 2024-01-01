@@ -13,5 +13,12 @@ pipeline {
                 sh 'python main.py'
             }
         }
+        stage('Post Build') {
+            steps {
+                sh '''git add output.json
+                git commit -m "New JSON file"
+                git push origin main'''
+            }
+        }
     }
 }
