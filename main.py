@@ -2,7 +2,7 @@ import os
 import pandas as pd
 import glob
 
-file_name = glob.glob("/var/lib/jenkins/workspace/daniel-new/*.xlsx")[0]
+file_name = glob.glob("*.xlsx")[0]
 json_file_name = "output.json"
 
 # Reading and converting excel to json using pandas
