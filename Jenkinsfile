@@ -17,6 +17,7 @@ pipeline {
             steps {
                 sh '''git add output.json
                 git commit -m "New JSON file"
+                git branch -m main
                 git push -u origin main'''
             }
         }
