@@ -19,7 +19,7 @@ pipeline {
                 git add output.json
                 git commit -m "new json file created"
                 git remote -v 
-                git push -u main'''
+                git push -u origin main'''
             }
         }
     }
