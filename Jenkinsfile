@@ -15,11 +15,10 @@ pipeline {
         }
         stage('Post Build') {
             steps {
-                sh '''git add output.json
-                git commit -m "New JSON file"
-                git checkout -b main
+                sh '''git checkout -b main
+                git add output.json
                 git push origin main
-                git commit --kura1528 --reset-author'''
+                git commit -am "New JSON file"'''
             }
         }
     }
