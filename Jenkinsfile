@@ -15,9 +15,11 @@ pipeline {
         }
         stage('Post Build') {
             steps {
-                sh '''git add output.json
-                git push origin main
-                git commit -am "New JSON file"'''
+                sh '''git init
+                git remote add origin https://github.com/kura1528/converter.git
+                git add output.json
+                git commit -m "new json file created"
+                git push origin main'''
             }
         }
     }
