@@ -16,7 +16,7 @@ pipeline {
         stage('Post Build') {
             steps {
                 sh '''git init
-                git config --global url.https://kura1528:Secureme%400909@github.com/.insteadOf https://github.com/
+                git config --global url.https://kura1528@github.com/.insteadOf https://github.com/
                 git remote rm origin
                 git remote add origin https://kura1528:Secureme%400909@github.com/kura1528/converter.git
                 git pull origin main
