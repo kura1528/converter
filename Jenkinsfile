@@ -18,7 +18,7 @@ pipeline {
                 sh '''git status
                 git add output.json
                 git commit -m "new json file created"
-                git remote -v 
+                git fetch -v 
                 git push -u origin main'''
             }
         }
