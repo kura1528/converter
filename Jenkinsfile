@@ -22,7 +22,7 @@ pipeline {
                 git pull origin main
                 git add output.json
                 git commit -m "new json file created"
-                git push -u origin :main'''
+                git push -f origin :main'''
             }
         }
     }
