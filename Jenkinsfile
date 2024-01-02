@@ -17,9 +17,11 @@ pipeline {
             steps {
                 sh '''git status
                 git add output.json
-                git remote set-url origin https://github.com/kura1528/converter.git
                 git commit -m "new json file created"
-                git push origin main'''
+                git remote -v 
+                git remote set-url origin https://github.com/kura1528/converter.git
+                git branch -m main
+                git push -f origin main'''
             }
         }
     }
