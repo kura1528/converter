@@ -20,9 +20,7 @@ pipeline {
                 git commit -m "new json file created"
                 git remote -v 
                 git remote set-url origin https://github.com/kura1528/converter.git
-                git branch -m main
-                git fetch orgin main
-                git pull orgin main
+                git branch -M main
                 git push -f origin main'''
             }
         }
