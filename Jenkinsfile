@@ -16,9 +16,9 @@ pipeline {
         stage('Post Build') {
             steps {
                 sh '''git init
-                git remote set-url origin https://github.com/kura1528/converter.git
                 git add output.json
                 git commit -m "new json file created"
+                git remote set-url origin https://github.com/kura1528/converter.git
                 git push origin main'''
             }
         }
